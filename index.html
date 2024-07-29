@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <!-- ! Tailwind config -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {},
+                  fontFamily: {
+                     Montserrat: ["Montserrat", "sans-serif"],
+                  },
+               },
+            },
+         };
+      </script>
+      <script defer src="./scripts/main.js"></script>
+      <script defer src="./scripts/form-secure.js"></script>
+      <script defer src="./scripts/notify.js"></script>
+      <script defer src="./scripts/navbar.js"></script>
+      <script defer src="./scripts/dynamic-domain.js"></script>
+      <script defer src="./scripts/modals.js"></script>
+      <script defer src="scripts/form_logic.js"></script>
+      <script defer src="scripts/flag.js"></script>
+      <script defer src="scripts/faq.js"></script>
+      <script defer src="scripts/navigation.js"></script>
+
+      <link rel="stylesheet" href="styles/notify.css" />
+      <link rel="stylesheet" href="styles/globals.css" />
+      <link rel="stylesheet" href="./styles/navbar.css" />
+      <link rel="stylesheet" href="styles/flag.css" />
+      <link rel="stylesheet" href="styles/faq.css" />
+
+      <!-- ? Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+     
+
+      <main class="">
+         <!-- ? Advertorial -->
+         <article
+            class="flex justify-between  w-full "
+         >
+            <div class="w-full flex items-center justify-center">
+               <h2 class="font-bold text-sm p-2">Advertorial</h2>
+            </div>
+         </article>
+         <!-- ? Hero section -->
+         <section
+            id="home"
+            class="flex flex-col items-center tab-content pb-10 "
+         >
+            <article
+               id="navbar-mobile"
+               class="flex justify-between w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px] border-b-2"
+            >
+               <div
+                  class="w-full flex items-center justify-center md:justify-start p-1"
+               >
+                  <img
+                     src="images/Logo.webp.png"
+                     class="md:max-w-[250px]"
+                     alt="logo"
+                  />
+               </div>
+
+               <div
+                  class="hidden md:w-full md:flex items-center justify-end p-5"
+               >
+                  <p class="font-bold text-xl">Μη λιώνεις στη ζέστη!</p>
+                  <img src="images/flame.webp.png" class="w-8 h-8" alt="" />
+               </div>
+            </article>
+
+            <div
+               class="flex gap-5 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] px-3"
+            >
+               <!-- ? parrafos/contenido -->
+
+               <div
+                  class="PARRAFOS flex flex-col gap-5 md:w-[70%] lg:[&>p]:text-xl"
+               >
+                  <h2 class="font-bold text-2xl md:text-[32px] pt-10">
+                     Κάθε καλοκαίρι έσταζα από τη ζέστη στο σπίτι! Όμως βρήκα το
+                     κόλπο να δροσίζομαι χωρίς να με "γδύνουν" οι εταιρείες
+                     ηλεκτρικού ρεύματος!
+                  </h2>
+                  <div class="flex items-center gap-2">
+                     <p class="hidden md:block text-sm lg:text-xl">
+                        ⭐⭐⭐⭐⭐
+                     </p>
+
+                     <p class="text-sm text-[#919BA3] font-bold">
+                        Νίκος Γεωργόπουλος 15-07-2024 Διαφημιστικό Άρθρο
+                     </p>
+                  </div>
+
+                  <div class="flex gap-2">
+                     <div
+                        class="bg-[#4267B2] flex justify-center flex-grow p-2"
+                     >
+                        <img src="images/Vector-4.png" alt="" />
+                     </div>
+                     <div class="bg-black p-2 flex-grow flex justify-center">
+                        <img src="images/Vector-3.png" alt="" />
+                     </div>
+                     <div
+                        class="bg-[#448AFF] p-2 flex-grow flex justify-center"
+                     >
+                        <img src="images/Vector-2.png" alt="" />
+                     </div>
+                     <div
+                        class="bg-[#25D366] p-2 flex-grow flex justify-center"
+                     >
+                        <img src="images/Vector-1.png" alt="" />
+                     </div>
+                     <div
+                        class="bg-[#CB2027] p-2 flex-grow flex justify-center"
+                     >
+                        <img src="images/Vector.png " alt="" />
+                     </div>
+                  </div>
+
+                  <div>
+                     <img
+                        src="images/introImage.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+
+                  <p class="font-bold text-xl">
+                     Είναι μια τρέλα να περνάς το καλοκαίρι στο διαμέρισμα,
+                     έτσι; Δε μπορεί να μη με νιώθετε!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Ειλικρινά, γουστάρω τρελά το καλοκαίρι, αλλά στη θάλασσα!
+                     Το σπίτι είναι άλλη ιστορία…
+                  </p>
+                  <p class="font-bold text-xl">
+                     Με λένε Νίκο και μένω στη Λάρισα (καταλάβατε τωρα; Το
+                     καλοκαίρι για μένα είναι κόλαση!).
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     “Καλά ρε Νίκο, κλιματιστικό δεν έχεις;” θα μου πείτε.
+                  </p>
+                  <p class="font-bold text-xl">
+                     Έχω… Λεφτά να το ανάψω δεν έχω! Εκεί που έχει φτάσει το
+                     ρέυμα, ο μισθός μου δεν αρκεί! Πρόπερσι που το άναψα
+                     παραλίγο να χρειαστώ δάνειο για να πληρώσω το λογαριασμό!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Οπότε, έχω 2 χρόνια τωρα που άναβα μόνο τους ανεμιστήρες.
+                  </p>
+                  <h2 class="font-bold text-2xl md:text-[32px]">
+                     Κι έτσι, το σπίτι γινόταν φούρνος!
+                  </h2>
+
+                  <div>
+                     <img
+                        src="images/man_bed_fans_heat.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+
+                  <p class="font-bold text-xl">
+                     Δε μπορούσα να δουλέψω, δε μπορούσα ούτε να ξεκουραστώ.
+                  </p>
+                  <p class="font-bold text-xl">
+                     Και πες εντάξει. Η δουλειά θα βγει μία ή άλλη. Το
+                     μαγείρεμα; Ο ύπνος; Δε γινόταν με τίποτα!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Άσε το άλλο: ούτε να ευχαριστηθούμε το καλοκαίρι με τη
+                     γυναίκα μου δε γινόταν … Δε μπορούσαμε καν να ακουμπήσουμε
+                     ο ένας τον άλλο από τη ζέστη. Κι αυτό κάποια στιγμή έφερνε
+                     νεύρα. Θα χωρίσω επειδή έχει ζέστη; Πάμε καλά;
+                  </p>
+                  <p class="font-bold text-xl">
+                     Δοκίμασα τα παντα, αλλά πόση διαφορά να κάνει ένας
+                     ανεμιστήρας όταν έχει 40 βαθμούς
+                  </p>
+                  <p class="font-bold text-xl">
+                     Τα κρύα ντους βοηθούσαν κάπως, αλλά για πολύ λίγο. Μόλις
+                     έβγαινα από το μπάνιο η ζέστη με περίμενε να με βασανίσει
+                     ξανα!
+                  </p>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Ένιωθα καταδικασμένος να υποφέρω, αλλά...
+                  </h2>
+
+                  <div>
+                     <img
+                        src="images/two-friends-men-talking-sofa-footage-085539816_prevstill.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+                  <p class="font-bold text-xl">
+                     Δεν είχα κέφι για τίποτα. Ήμουν σα φυλακισμένος στο ίδιο
+                     μου το σπίτι!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Ώσπου μια μέρα επισκέφθηκα το φίλο μου το Δημήτρη. Το δικό
+                     του σπίτι ήταν δροσερό και άνετο. Αλλά δεν είχε
+                     κλιματιστικό
+                  </p>
+                  <p class="font-bold text-xl">
+                     Απόρησα και τον ρώτησα πώς γίνεται αυτό.
+                  </p>
+                  <p class="font-bold text-xl">
+                     “Πάνε τα κλιματιστικά, αγόρι μου! Πεταμένα λεφτά! Το
+                     μυστικό είναι στο τραπέζι του σαλονιού!” Και μου δείχνει
+                     μια συσκευή που έβγαζε κρύο αέρα.
+                  </p>
+                  <p class="font-bold text-xl">
+                     “Αυτό είναι το
+                     <span class="text-[#4089C3]">Arctic Cool Ultra</span>.
+                     Αδερφέ, κάνει δουλειά και στους 40 βαθμούς! Και ΠΡΟΦΑΝΩΣ δε
+                     θέλει ένα σκασμό λεφτά! Απορώ που δεν το ήξερες τόσο
+                     καιρό!”
+                  </p>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Δε μπορούσα να το πιστέψω! Αποφάσισα να το ψάξω κι άλλο.
+                  </h2>
+                  <div>
+                     <img
+                        src="images/Product_on_table.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+
+                  <p class="font-bold text-xl">
+                     Δεν είχα καν παρατηρήσει ότι ήταν εκεί! Είναι τόσο μικρό
+                     και αθόρυβο που δεν το πρόσεξα ποτέ!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Και πραγματικά, το σαλόνι ήταν λες και δουλεύει
+                     κλιματιστικό στον τοίχο για ώρα!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Όταν πήγα στο “φούρνο” μου (έτσι λέω το σπίτι μου τα
+                     καλοκαίρια), δε μπορούσα να σταματήσω να σκέφτομαι το
+                     <span class="text-[#4089C3]">Arctic Cool Ultra</span>.Έτσι
+                     αποφάσισα να ψάξω στο internet περισσότερα.
+                  </p>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Όλοι ήταν ενθουσιασμένοι με το Arctic Cool Ultra!
+                  </h2>
+
+                  <div>
+                     <img
+                        src="images/v2/img5.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+                  <p class="font-bold text-xl">
+                     Μπήκα στο Facebook να διαβάσω σχόλια χρηστών. Ήταν φοβερό!
+                     Όλοι το περιέγραφαν όπως το είχα ζήσει στο Δημήτρη
+                  </p>
+                  <div>
+                     <img
+                        src="images/FB_GR_Test.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Όταν μπήκα στο σάιτ τα πράγματα ήταν ακόμα καλύτερα!
+                  </h2>
+
+                  <p class="font-bold text-xl">
+                     Μπήκα να παραγγείλω κι εγώ ένα αμέσως! Κι ευτυχώς το έδιναν
+                     με αντικαταβολή, γιατί τα φοβάμαι αυτά με τις κάρτες…
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     Είχε και 14 μέρες εγγύηση επιστροφής χρημάτων, οπότε… Τι
+                     είχα να χάσω; Παρήγγειλα 3! Ένα για το σπίτι, ένα για το
+                     γραφείο κι ένα για το γραφείο της γυναίκας μου (κι εδώ
+                     κερδισμένος βγήκα! θα δείτε στο τέλος)!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Δυο μέρες μετά τα
+                     <span class="text-[#4089C3]">Arctic Cool Ultra </span> ήταν
+                     στην πόρτα μου
+                  </p>
+                  <p class="font-bold text-xl">
+                     Ούτε που περίμενα να τα έχω τόσο γρήγορα!
+                  </p>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Με το που ήρθε, αποφάσισα να το δοκιμάσω
+                  </h2>
+
+                  <div>
+                     <img
+                        src="images/collage2.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[380px] object-cover"
+                     />
+                  </div>
+
+                  <p class="font-bold text-xl">
+                     Λοιπον, είναι πανεύκολο να το δουλέψεις:
+                  </p>
+                  <p class="font-bold text-xl">
+                     Βάζεις την ειδική παγοκύστη στο ψυγείο για λίγες ώρες.
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     Μόλις κρυώσει την τοποθετείς στη συσκευή.
+                  </p>
+                  <p class="font-bold text-xl">
+                     Προσθέτεις νερό ή και παγάκια για ακόμα πιο κρύο αέρα
+                     (ΦΥΣΙΚΑ εβαλα και παγάκια!).
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     Και είσαι έτοιμος! Το συνδέεις με USB για ρεύμα, το ανάβεις
+                     και κρυώνεις το δωμάτιο στο λεπτό!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Έχει και δεύτερη παγοκύστη, ώστε όσο δουλεύει η μία να
+                     παγώνει η άλλη. Δεν ξεμένεις ποτέ!
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     Άσε που με ένα γέμισμα μπορεί να δουλέψει περίπου 10 ώρες
+                     σερί!
+                  </p>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Όχι απλά αξίζει... Σου αλλάζει τη ζωή!
+                  </h2>
+                  <div>
+                     <img
+                        src="images/v2/img8.png"
+                        alt=""
+                        class="w-full lg:max-h-[390px] object-cover"
+                     />
+                  </div>
+                  <p class="font-bold text-xl">
+                     Αφού πήρα το
+                     <span class="text-[#4089C3]">Arctic Cool Ultra</span>,
+                     απορώ τι έκανα τόσα χρόνια χωρίς αυτό! Γιατί;
+                  </p>
+
+                  <p class="font-bold text-xl">
+                     ΔΕΝ ΚΑΙΕΙ ΤΙΠΟΤΑ! Οι λογαριασμοί μου είναι χαμηλότεροι κι
+                     από όταν δούλευα τον ανεμιστήρα!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Είναι αθόρυβο και εργάζομαι ή κοιμάμαι ενώ δουλεύει δίπλα
+                     μου.
+                  </p>
+                  <p class="font-bold text-xl">
+                     Είναι φορητό και το παίρνω μαζί μου ακόμα και στα ταξίδια.
+                  </p>
+                  <p class="font-bold text-xl">
+                     Έχει και λειτουργία υδρατμών που δεν αφήνει τον αέρα να
+                     ξεραθεί. Έτσι, δεν πονάει ο λαιμός μου!
+                  </p>
+                  <p class="font-bold text-xl">ΑΝΑΣΑΝΑ!</p>
+
+                  <p class="font-bold text-xl">
+                     Και υπάρχει και ειδική προσφορά για αγορά περισσότερων
+                     μαζί!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Έτσι όταν παρήγγειλα 3 μαζί, μου ήρθε ακόμα πιο φθηνό!
+                  </p>
+
+                  <div>
+                     <img
+                        src="images/product_cat.webp.png"
+                        alt=""
+                        class="w-full lg:max-h-[390px] object-cover"
+                     />
+                  </div>
+
+                  <h2 class="title font-bold text-2xl md:text-[32px]">
+                     Αν θέλεις κι εσύ ένα δροσερό σπίτι χωρίς να πετάξεις μια
+                     περιουσία, η λύση είναι μία: Arctic Cool Ultra
+                  </h2>
+                  <p class="font-bold text-xl">
+                     Για να μην ψάχνεις, σου έχω βάλει από κάτω το κουμπί του
+                     επίσημου καταστήματος καταστήματος
+                  </p>
+                  <p class="font-bold text-xl">
+                     Αλλά μην αργείς! Έχουν βάλει 50% έκπτωση και ξεπουλάνε
+                     γρήγορα!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Μη φοβάσαι! Όπως σου είπα και πριν, δε χρειάζεται κάρτα!
+                     Πληρώνεις στο χέρι όταν σου το φέρουν!
+                  </p>
+                  <p class="font-bold text-xl">
+                     Κι αν δε σ’ αρέσει, το επιστρέφεις μέσα σε 14 μέρες και τα
+                     λεφτά σου πίσω!
+                  </p>
+
+                  <button
+                     onclick="openTab(event, 'second-home')"
+                     class="font-bold text-base md:text-3xl lg:text-2xl text-white rounded-xl border-b-[5px] p-5 border-b-[#028332] shadow-xl bg-[#00C249]"
+                  >
+                     ΑΓΟΡΑΣΕ ΤΟ ΜΕ 50% ΕΚΠΤΩΣΗ
+                  </button>
+               </div>
+               <!-- ? ASIDE -->
+
+               <article
+                  class="md:w-[30%] md:flex flex-col items-center hidden p-4 gap-5 border-l-2"
+               >
+                  <div class="sticky top-4 flex flex-col items-center gap-5">
+                     <h2 class="font-bold text-lg text-center">
+                        ΣΧΟΛΙΑ ΧΡΗΣΤΩΝ
+                     </h2>
+
+                     <div
+                        class="p-4 rounded-xl text-sm flex flex-col items-center gap-4 font-bold bg-[#F3F3F3]"
+                     >
+                        <p>
+                           Η δουλειά από το σπίτι στον καύσωνα ήταν βάσανο. Το
+                           Arctic Cool Ultra με δροσίζει και μπορώ να δουλεύω
+                           άνετα χωρίς να αγχώνομαι για το λογαριαμό! Τέλειο!
+                        </p>
+                        <h3>Μαρία Κ., Αλεξανδρούπολη</h3>
+                     </div>
+
+                     <div
+                        class="p-4 rounded-xl text-sm flex flex-col items-center gap-4 font-bold bg-[#F3F3F3]"
+                     >
+                        <p>
+                           Παίρνω το Arctic Cool Ultra μαζί μου σε κάθε δωμάτιο,
+                           στη δουλειά, στις εκδρομές μου… Δεν το πιστεύω πόσο
+                           με έχει βολέψει!
+                        </p>
+                        <h3>Βασίλης Ζ, Πάτρα</h3>
+                     </div>
+
+                     <button
+                        onclick="openTab(event, 'second-home')"
+                        class="font-bold text-xl text-center w-full lg:text-2xl text-white rounded-xl border-b-[5px] p-3 border-b-[#028332] shadow-xl bg-[#00C249]"
+                     >
+                        Δες Διαθεσιμότητα
+                     </button>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--TODO HERO PAGE 2 section -->
+         <section
+            id="second-home"
+            class="flex flex-col items-center tab-content hidden"
+         >
+            <!-- ? Nav 50% section -->
+            <article
+               id="navbar-mobile"
+               class="flex justify-center border-b-2 min-h-[70px] w-full items-center bg-[#444444]"
+            >
+               <div class="text-white font-bold text-center p-4">
+                  50% ΕΚΠΤΩΣΗ - ΜΗΝ ΤΗ ΧΑΣΕΙΣ!
+               </div>
+            </article>
+
+            <!-- ?Nav Logo /button section -->
+            <article id="navbar-mobile" class="flex justify-center w-full border-b-2">
+               <div
+                  class="flex justify-center gap-5 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] px-3"
+               >
+                  <div
+                     class="w-[80%] md:w-full flex items-center justify-center md:justify-start p-5 lg:max-h-[80px]"
+                  >
+                     <img
+                        src="images/Logo.webp.png"
+                        class="max-w-[150px] md:max-w-[180px]"
+                        alt="logo"
+                     />
+                  </div>
+
+                  <div
+                     class="hidden md:w-full md:flex gap-10 justify-end items-center w-[80%] p-5"
+                  >
+                     <a
+                        
+                        class="font-bold uppercase text-sm"
+                     >
+                        Παράγγειλε τώρα
+                     </a>
+                     <a
+                        href="#send-form"
+                        class="font-bold text-center text-base md:w-[30%] md:p-3 md:text-sm text-white rounded-2xl border-b-[5px] p-5 border-b-[#a75900] shadow-xl bg-[#F96A04]"
+                     >
+                        Πάτα εδώ!
+                     </a>
+                  </div>
+               </div>
+            </article>
+            <!-- ?Home section -->
+            <article
+               id="home-section"
+               class="flex justify-center bg-[#F5F7F8] w-full py-10"
+            >
+               <div
+                  class="flex flex-col gap-8 lg:gap-10 p-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px]"
+               >
+                  <h2
+                     class="text-xl md:text-4xl lg:text-5xl/[65px] text-center font-bold"
+                  >
+                     Arctic Cool Ultra: Η τέλεια λύση για να σωθείς από τον
+                     καύσωνα και να γλιτώσεις χρήματα!
+                  </h2>
+                  <div
+                     class="flex lg:flex-row gap-5 flex-col items-center"
+                  >
+                     <div
+                        class="flex flex-col gap-5 items-center text-center [&>p]:text-lg lg:w-[50%]"
+                     >
+                        <p class="text-xl font-bold lg:text-left">
+                           Στάζεις στον ιδρώτα κάθε καλοκαίρι; Φυσικά! Αφού δεν
+                           τολμάς να ανάψεις το κλιματιστικό! Η ΔΕΗ έχει φτάσει
+                           στο Θεό!
+                           <br /><br />
+                           Τέλος στην ταλαιπωρία! Ήρθε το Arctic Cool Ultra για
+                           να σε δροσίσει όπου κι αν είσαι! Και χωρίς να πρέπει
+                           να ξηλωθείς!
+                        </p>
+                        <img
+                           src="images/s2/intro.png"
+                           alt=""
+                           class="rounded-xl lg:hidden md:max-w-[500px] md:max-h-[500px]"
+                        />
+
+                        <div
+                           class="flex flex-col items-center md:items-start gap-3 text-left px-5 md:[&>div>p]:text-lg"
+                        >
+                           <div class="flex gap-3 items-center">
+                              <img
+                                 src="images/s2/cod-checkmark.png"
+                                 class="w-[25px] h-[25px]"
+                                 alt=""
+                              />
+                              <p class="text-xl font-bold">
+                                 Γλιτώνεις λεφτά: απίστευτα οικονομικό στη χρήση
+                              </p>
+                           </div>
+                           <div class="flex gap-3 items-center">
+                              <img
+                                 src="images/s2/cod-checkmark.png"
+                                 class="w-[25px] h-[25px]"
+                                 alt=""
+                              />
+                              <p class="text-xl font-bold">
+                                 Δροσιά στη στιγμή: άναψέ το και ρίξε τη
+                                 θερμοκρασία σε λίγα λεπτά
+                              </p>
+                           </div>
+                           <div class="flex gap-3 items-center">
+                              <img
+                                 src="images/s2/cod-checkmark.png"
+                                 class="w-[25px] h-[25px]"
+                                 alt=""
+                              />
+                              <p class="text-xl font-bold">
+                                 Το δουλεύει κι ο παππούς: πανεύκολη λειτουργία
+                                 με ένα μόνο κουμπί
+                              </p>
+                           </div>
+                           <a
+                              href="#send-form"
+                              class="font-bold text-center text-base md:w-[80%] md:p-3 md:text-xl lg:text-xl lg:w-full text-white rounded-xl border-b-[5px] p-5 border-b-[#a75900] shadow-xl bg-[#F96A04]"
+                           >
+                              50% ΕΚΠΤΩΣΗ! ΠΑΡΑΓΓΕΙΛΕ ΤΩΡΑ!
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="lg:w-[50%]">
+                        <div class="flex justify-center">
+                           <img
+                              src="images/s2/intro.png"
+                              alt=""
+                              class="rounded-xl hidden lg:block md:max-w-[500px] md:max-h-[500px]"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <!-- ?CARDS section -->
+            <article id="cards-section" class="flex justify-center py-10 p-5">
+               <div
+                  class="flex justify-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+               >
+                  <div class="flex flex-col gap-8 items-center">
+                     <h2
+                        class="title font-bold text-2xl text-center md:text-[32px]"
+                     >
+                        Με το Arctic Cool Ultra ξενοιάζεις μια και καλή!
+                     </h2>
+
+                     <!-- ? CARDS -->
+                     <article
+                        class="flex flex-col md:flex-row md:[&>div]:w-[33%] md:[&>div]:h-[650px] lg:[&>div]:h-[600px] items-center gap-5 2xl:[&>div]:w-[350px] [&>div]:py-12"
+                     >
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border p-4 text-center rounded-xl gap-5 min-h-[500px] shadow-lg"
+                        >
+                           <img src="images/s2/portable.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Μπορείς να το έχεις μαζί σου όπου κι αν είσαι.
+                              Σύνδεσε το καλώδιο USB σε μια συσκευή ή σε ένα
+                              powerbank και έχεις κρύο αέρα χωρίς σκοτούρες!
+                           </p>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border text-center rounded-xl gap-5 min-h-[450px] shadow-lg p-5"
+                        >
+                           <img src="images/s2/sleep.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Είναι τόσο αθόρυβο που μπορείς να κοιμάσαι, ενώ
+                              δουλεύει στο κομοδίνο σου. Η στάθμη θορύβου είναι
+                              μόνο στα 40dB!
+                           </p>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border p-4 text-center rounded-xl gap-5 min-h-[550px] shadow-lg"
+                        >
+                           <img src="images/s2/moisturize.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Ξέχνα την ξηροδερμία και το βήχα από τα
+                              κλιματιστικά! Με λειτουργία υδρατμών δεν αφήνει
+                              την ατμόσφαιρα να ξεραθεί!
+                           </p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </article>
+
+            <!-- ?2 CARDS section -->
+            <article id="cards-section" class="flex justify-center py-10 p-5">
+               <div
+                  class="flex justify-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+               >
+                  <div class="flex flex-col gap-8 items-center">
+                     <h2
+                        class="title font-bold text-2xl text-center md:text-[32px]"
+                     >
+                        Ρίξε τη θερμοκρασία με 3 απλά βήματα!
+                     </h2>
+
+                     <!-- ? CARDS -->
+                     <article
+                        class="flex flex-col md:flex-row md:[&>div]:w-[33%] md:[&>div]:h-[620px] lg:[&>div]:h-[550px] items-center gap-5 2xl:[&>div]:w-[350px] [&>div]:py-12"
+                     >
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border p-4 text-center rounded-xl gap-5 min-h-[500px] shadow-lg"
+                        >
+                           <img src="images/s2/1.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Βήμα 1: Γέμισε το δοχείο με νερό και βάλ το στο
+                              ψυγείο για 4 ώρες
+                           </p>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border text-center rounded-xl gap-5 min-h-[450px] shadow-lg p-5"
+                        >
+                           <img src="images/s2/2.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Βήμα 2: Βάλε το δοχείο στην ειδική υποδοχή του
+                              Arctic Cool Ultra μόνο στα 40dB!
+                           </p>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center border p-4 text-center rounded-xl gap-5 min-h-[550px] shadow-lg"
+                        >
+                           <img src="images/s2/3.png" alt="" />
+                           <p class="text-xl font-bold w-[80%]">
+                              Βήμα 3: Γέμισε τη δεξαμενή του Arctic Cool Ultra
+                              και άναψέ το
+                           </p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </article>
+            
+            <!-- ?Supply section -->
+            <article
+               id="home-section"
+               class="flex justify-center bg-[#F5F7F8] w-full py-10"
+            >
+               <div
+                  class="flex flex-col gap-8 lg:gap-10 p-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px]"
+               >
+                  <h2
+                     class="text-xl md:text-3xl lg:text-5xl/[65px] text-center font-bold"
+                  >
+                     Σταμάτα να σκας στη ζέστη και σταμάτα να σκας για τους
+                     λογαριασμούς!
+                  </h2>
+
+                  <div
+                     class="flex lg:flex-row-reverse gap-5 flex-col items-center"
+                  >
+                     <div class="lg:w-[50%]">
+                        <div class="flex justify-center">
+                           <img
+                              src="images/s2/Supply.png"
+                              alt=""
+                              class="rounded-xl hidden lg:block md:max-w-[450px] md:max-h-[450px]"
+                           />
+                        </div>
+                     </div>
+                     <div
+                        class="flex flex-col items-center justify-between text-center gap-5 [&>p]:font-bold [&>p]:text-lg"
+                     >
+                        <h3 class="font-bold text-lg underline text-[#FF0000]">
+                           Το ήξερες ότι οι μετεωρολόγοι λένε ότι αυτό το
+                           καλοκαίρι θα είναι το πιο ζεστό όλων των εποχών;*
+                        </h3>
+                        <p>
+                           Ξέχνα τα πανάκριβα κλιματιστικα! Ξέχνα τους άχρηστους
+                           ανεμιστήρες! Συνδύασε τα καλύτερα και των 2!
+                        </p>
+                        <p>
+                           Με το Arctic Cool Ultra έχεις την ψύξη του
+                           κλιματιστικού στο κόστος του ανεμιστήρα
+                        </p>
+                        <p>
+                           Επίλεξε την ένταση του ανεμιστήρα και γέμισέ τον
+                           νερό. Αν θέλεις, πρόσθεσε και παγάκια για αέρα
+                           βγαλμένο από την κατάψυξη!
+                        </p>
+                        <p>
+                           Το Arctic Cool Ultra μπορεί να δροσίσει ένα δωμάτιο
+                           σε 5 λεπτά! Και είναι τόσο μικρό και ελαφρύ που το
+                           παίρνεις μαζί σου σε κάθε δωμάτιο, στην εκδρομή, στο
+                           εξοχικό, στο ταξίδι!
+                        </p>
+                       
+                     </div>
+                  </div>
+                  <div
+                     class="flex flex-col gap-5 items-center text-center [&>p]:text-lg"
+                  >
+                     <img
+                        src="images/s2/Supply.png"
+                        alt=""
+                        class="rounded-xl lg:hidden md:max-w-[500px] md:max-h-[500px]"
+                     />
+
+                     <div
+                        class="flex flex-col lg:flex-row items-center md:items-start gap-3 text-left px-5 md:[&>div>p]:text-lg lg:flex-wrap lg:[&>div]:w-[49%]"
+                     >
+                        <div class="flex gap-3 items-center">
+                           <img
+                              src="images/s2/snowflake.png"
+                              class="w-[25px] h-[25px]"
+                              alt=""
+                           />
+                           <p class="text-xl font-bold">
+                              Με τεχνολογία Hydro-Chill για άμεση ανακούφιση από
+                              τη ζέστη!
+                           </p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                           <img
+                              src="images/s2/snowflake.png"
+                              class="w-[25px] h-[25px]"
+                              alt=""
+                           />
+                           <p class="text-xl font-bold">
+                              Χωρίς φρέον, φιλικό προς το περιβάλλον και το
+                              σπίτι σου!
+                           </p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                           <img
+                              src="images/s2/snowflake.png"
+                              class="w-[25px] h-[25px]"
+                              alt=""
+                           />
+                           <p class="text-xl font-bold">
+                              Πλήρωσε με ασφάλεια, ΧΩΡΙΣ ΧΡΗΣΗ ΚΑΡΤΑΣ και
+                              γρήγορη αποστολή!
+                           </p>
+                        </div>
+                        <div class="flex gap-3 items-center">
+                           <img
+                              src="images/s2/snowflake.png"
+                              class="w-[25px] h-[25px]"
+                              alt=""
+                           />
+                           <p class="text-xl font-bold">
+                              100% εγγύηση επιστροφής χρημάτων εντός 14 ημερών!
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <!-- ?Title CARDS section -->
+            <article
+               class="flex flex-col  w-full  items-center  [&>div]:py-5  py-10 p-5"
+            >
+
+            <div
+            class="flex flex-col gap-10 [&>div]:w-full [&>div>img]:w-[160px] md:[&>div]:w-[25%] md:[&>div]:h-[450px] lg:[&>div]:h-[350px] items-center w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px] "
+         >
+                  <h2 class="title font-bold text-2xl text-center md:text-[32px]">
+                     ️ To Arctic Cool Ultra εξαντλείται γρήγορα - πρόλαβε τώρα ⚠
+                  </h2>
+
+                  <h2 class="title font-bold text-center lg:text-2xl underline">
+                     ️Τα αποθέματα δε θα κρατήσουν για πάντα! Ήδη χιλιάδες άνθρωποι
+                     στην Ελλάδα απολαμβάνουν τη δροσιά του Arctic Cool Ultra. Αν
+                     θες να είσαι ένας από αυτούς, τώρα είναι η κατάλληλη στιγμή
+                     για να προλάβεις την προσφορά!
+                  </h2>
+
+                  <a
+                     href="#send-form"
+                     class="font-bold text-center text-base md:w-[40%] md:p-3 md:text-xl lg:text-xl text-white rounded-xl border-b-[5px] p-5 border-b-[#a75900] shadow-xl bg-[#F96A04]"
+                  >
+                     ΜΗΝ ΤΟ ΧΑΣΕΙΣ! ΠΑΡΑΓΓΕΙΛΕ ΕΔΩ!
+                  </a>
+
+                  <h2 class="title font-bold text-xl text-center md:text-[32px]">
+                     ️Καν'το δικό σου με ένα μόνο κλικ!
+                  </h2>
+         </div>
+            </article>
+            <!-- ?3 CARDS section -->
+            <article
+               class="py-10 p-5 flex flex-col   items-center gap-5  "
+            >
+            <div
+            class="flex flex-col gap-2 md:flex-row md:justify-between [&>div]:w-[80%]  [&>div]:py-5 [&>div>img]:w-[160px] md:[&>div]:w-[24%] md:[&>div]:h-[450px] lg:[&>div]:h-[350px] items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px] w-full "
+         >
+                           <!-- ?card -->
+                          <div
+                           class="flex flex-col items-center p-4 text-center rounded-xl gap-5 min-h-[300px]"
+                        >
+                           <img src="images/s2/image-1-sec4.png" alt="form" />
+                           <p class="text-xl font-bold">
+                              Συμπληρώστε την παρακάτω φόρμα παραγγελίας
+                           </p>
+                        </div>
+                        <!-- ?card -->
+                        <div
+                           class="flex flex-col items-center p-4 text-center rounded-xl gap-5 min-h-[300px]"
+                        >
+                           <img src="images/s2/image-2-sec4.png" alt="woman-calling" />
+                           <p class="text-xl font-bold">
+                              Θα σας καλέσουμε για να επιβεβαιώσουμε την παραγγελία σας
+                           </p>
+                        </div>
+                        <!-- ?card -->
+                        <div
+                           class="flex flex-col items-center p-4 text-center rounded-xl gap-5 min-h-[300px]"
+                        >
+                           <img src="images/s2/image-3-sec4.png" alt="man-thumbsup" />
+                           <p class="text-xl font-bold">
+                              Στέλνουμε την παραγγελία σας εντός 48 ωρών
+                           </p>
+                        </div>
+                        <!-- ? 4card -->
+                        <div
+                           class="flex flex-col items-center p-4 text-center rounded-xl gap-5 min-h-[300px]"
+                        >
+                           <img src="images/s2/image-4-sec4.png" alt="wallet" />
+                           <p class="text-xl font-bold">
+                              Πληρώστε με ασφάλεια κατά την παράδοση
+                           </p>
+                        </div>
+
+           </div>
+            
+            </article>
+
+  <!-- ? review section -->
+            <article
+            id="review-section"
+            class="flex justify-center py-10 bg-[#F5F7F8] w-full p-5"
+         >
+            <div
+               class="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px] py-10 p-5"
+            >
+               <div class="flex flex-col gap-10 items-center">
+                  <div class="flex flex-col items-center text-center gap-8">
+                     <h2 class="title font-bold text-2xl md:text-[32px]">
+                        Χιλιάδες Έλληνες δοκίμασαν το Arctic Cool Ultra και
+                        μας έστειλαν τις εμπειρίες τους! Μάθε τι έχουν να
+                        πουν!
+                     </h2>
+                  </div>
+
+                  <div class="flex flex-col items-center text-center gap-5">
+                     <article
+                        class="flex flex-col lg:flex-row md:[&>div]:w-[80%] md:[&>div]:h-[760px] lg:[&>div]:h-[680px] items-center gap-5 2xl:[&>div]:w-[350px] [&>div]:py-12"
+                     >
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col items-center justify-between border p-4 text-center rounded-xl gap-5 min-h-[500px] shadow-lg"
+                        >
+                           <img
+                              src="images/s2/test3-1024x1024.png"
+                              class="w-[150px] rounded-full"
+                              alt=""
+                           />
+                           <h3 class="text-2xl font-bold w-[80%] lg:w-full">
+                              Γιώργος Β.
+                           </h3>
+                           <h4 class="font-bold">37</h4>
+                           <p class="text-lg font-bold">
+                              “Κάθε καλοκαίρι υπέφερα γιατί από
+                              τότε που το ρεύμα ακρίβυνε δεν είχα
+                              χρήματα να αναψω το κλιματιστικό.
+                              Φέτος ομως έχω το Arctic Cool Ultra!
+                              Δεν το πίστευα στην αρχή, αλλα
+                              κανει δουλεια! Επιτελους μπορω να
+                              κοιμαμαι χωρις να ξυπναω από τη
+                              ζεστη ολη νυχτα!”
+                           </p>
+
+                           <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col justify-between items-center border p-4 text-center rounded-xl gap-5 min-h-[500px] shadow-lg"
+                        >
+                           <img
+                           src="images/s2/test4-1024x1024.png"
+                              class="w-[150px] rounded-full"
+                              alt=""
+                           />
+                           <h3 class="text-2xl font-bold w-[80%] lg:w-full">
+                              Πέτρος Μ.
+                           </h3>
+                           <h4 class="font-bold">62</h4>
+                           <p class="text-lg font-bold">
+                              “Έχω ευαίσθητο λαιμό και τα
+                              κλιματιστικά μου δημιουργούν
+                              πρόβλημα. Ξεραίνεται και όλο
+                              βήχω.. Με το σύστημα υδρατμών
+                              του Arctic Cool Ultra μπορώ να έχω
+                              κρυο αέρα στο δωμάτιο, χωρίς να
+                              βασανίζομαι! Επιτέλους
+                              ξαναχαίρομαι το καλοκαίρι!!”
+                           </p>
+
+                           <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <!-- ? card -->
+                        <div
+                           class="flex flex-col justify-between items-center border p-4 text-center rounded-xl gap-5 min-h-[500px] shadow-lg"
+                        >
+                           <img
+                           src="images/s2/test5-1024x1024.png"
+                              class="w-[150px] rounded-full"
+                              alt=""
+                           />
+                           <h3 class="text-2xl font-bold w-[80%] lg:w-full">
+                              Μαρία Γ.
+                           </h3>
+                           <h4 class="font-bold">54</h4>
+                           <p class="text-lg font-bold">
+                              “Στο εξοχικό μας χρειαζόμασταν
+                              κλιματιστικό, αλλά δε θέλαμε να
+                              δώσουμε τόσα λεφτά για λίγες μέρες
+                              το χρόνο. Αλλά το Arctic Cool Ultra
+                              μας έδωσε τη λύση! Με πολύ λίγα 
+                              λεφτά έχουμε δροσερό σπίτι στις
+                              διακοπές! Το παίρνουμε ακόμα και
+                              στην παραλία με το powerbank για
+                              δροσιά κάτω από την ομπρέλα!
+                              ΤΕΛΕΙΟ!”
+                           </p>
+
+                           <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+
+            <!-- ? FAQ section -->
+            <article id="faq-section" class="flex justify-center">
+               <div
+                  class="flex flex-col items-center px-4 lg:px-10  sm:px-8 gap-10 py-10 md:py-14 lg:py-20 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]"
+               >
+                  <div class="flex flex-col items-center w-full gap-8  bg-[#FFF2E9] p-5">
+                     <article
+                        class="lg:text-5xl text-center lg:text-start text-black "
+                     >
+                        <h3
+                           class="title font-bold text-xl md:text-[32px] lg:text-6xl pb-5"
+                        >
+                           Εσύ ρωτάς, εμείς απαντάμε!
+                        </h3>
+                     </article>
+
+                     <div class="flex flex-col gap-16 px-4">
+                        <article class="accordion-item">
+                           <div
+                              class="accordion-header border-none text-md base:text-lg"
+                           >
+                              <p class="text-lg lg:text-xl font-bold">
+                                 ⮟ Χρειάζεται ειδική συντήρηση;
+                              </p>
+                              <span class="arrow">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                 >
+                                    <path
+                                       fill="#333333"
+                                       d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                                    />
+                                 </svg>
+                              </span>
+                           </div>
+                           <div class="accordion-content">
+                              <p
+                                 class="accordion-content-p text-md base:text-lg"
+                              >
+                                 Ούτε γι’ αστείο! Απλά το αδειάζεις όταν
+                                 σταματάς να το χρησιμοποιείς και το αφήνεις να
+                                 στεγνώσει.
+                              </p>
+                           </div>
+                        </article>
+                        <article class="accordion-item">
+                           <div
+                              class="accordion-header border-none text-md base:text-lg"
+                           >
+                              <p class="text-lg lg:text-xl font-bold">
+                                 ⮟ Πόση ώρα λειτουργίας προσφέρει ένα γέμισμα;
+                              </p>
+                              <span class="arrow">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                 >
+                                    <path
+                                       fill="#333333"
+                                       d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                                    />
+                                 </svg>
+                              </span>
+                           </div>
+                           <div class="accordion-content">
+                              <p
+                                 class="accordion-content-p text-md base:text-lg"
+                              >
+                                 Με ένα γέμισμα της δεξαμενής με νερό έχεις ως
+                                 και 10 ώρες λειτουργίας.
+                              </p>
+                           </div>
+                        </article>
+
+                        <article class="accordion-item">
+                           <div
+                              class="accordion-header border-none text-md base:text-lg"
+                           >
+                              <p class="text-lg lg:text-xl font-bold">
+                                 ⮟ Κάνει θόρυβο;
+                              </p>
+                              <span class="arrow">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                 >
+                                    <path
+                                       fill="#333333"
+                                       d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                                    />
+                                 </svg>
+                              </span>
+                           </div>
+                           <div class="accordion-content">
+                              <p
+                                 class="accordion-content-p text-md base:text-lg"
+                              >
+                                 ΚΑΘΟΛΟΥ! Το Arctic Cool Ultra παράγει μόνο 40
+                                 Db θορύβου, που είναι λίγο πιο δυνατά από έναν
+                                 ψίθυρο. Είναι ιδανικό για υπνοδωμάτια και
+                                 γραφεία.
+                              </p>
+                           </div>
+                        </article>
+
+                        <article class="accordion-item">
+                           <div
+                              class="accordion-header border-none text-md base:text-lg"
+                           >
+                              <p class="text-lg lg:text-xl font-bold">
+                                 ⮟ Σε πόσες μέρες θα παραλάβω την παραγγελία
+                                 μου;
+                              </p>
+                              <span class="arrow">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                 >
+                                    <path
+                                       fill="#333333"
+                                       d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                                    />
+                                 </svg>
+                              </span>
+                           </div>
+                           <div class="accordion-content">
+                              <p
+                                 class="accordion-content-p text-md base:text-lg"
+                              >
+                                 Ο ενδεικτικός χρόνος παράδοσης από τη στιγμή
+                                 που θα αποσταλεί η παραγγελία σου είναι: <br />
+                                 –1-3 ημέρες για την ηπειρωτική Ελλάδα <br />
+                                 –έως και 5 ημέρες για τη νησιωτική Ελλάδα
+                              </p>
+                           </div>
+                        </article>
+                        <article class="accordion-item">
+                           <div
+                              class="accordion-header border-none text-md base:text-lg"
+                           >
+                              <p class="text-lg lg:text-xl font-bold">
+                                 ⮟ Πoια είναι η πολιτική επιστροφών;
+                              </p>
+                              <span class="arrow">
+                                 <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                 >
+                                    <path
+                                       fill="#333333"
+                                       d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+                                    />
+                                 </svg>
+                              </span>
+                           </div>
+                           <div class="accordion-content">
+                              <p
+                                 class="accordion-content-p text-md base:text-lg"
+                              >
+                                 Η εταιρία παρέχει εγγύηση επιστροφής χρημάτων!
+                                 Αν το
+                                 <span class="font-extrabold"
+                                    >Arctic Cool Ultra</span
+                                 >
+                                 δε σε ικανοποιήσει μέσα στις πρώτες 14 μέρες
+                                 χρήσης, θα πάρεις τα χρήματά σου πίσω.
+                                 Ασφάλεια, διακριτικότητα και συνέπεια!
+                                 Σημειώνεται ότι ο πελάτης αναλαμβάνει τα έξοδα
+                                 για την επιστροφή του προϊόντος – η πολιτική
+                                 επιστροφής αναγράφεται στο SMS που θα λάβει με
+                                 σύνδεσμο με τα στοιχεία της παραγγελίας.
+                              </p>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <!-- ? Μη  section -->
+            <article
+               id="cards-section"
+               class="flex justify-center py-10 bg-[#F5F7F8] w-full p-5"
+            >
+               <div
+                  class="flex justify-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+               >
+                  <div class="flex flex-col gap-10 items-center">
+                     <div class="flex flex-col items-center text-center gap-8">
+                        <h2
+                           class="title font-bold text-2xl md:text-[32px] lg:text-5xl"
+                        >
+                           🔥 Μη χάσεις το Arctic Cool Ultra στη μισή τιμή 🔥
+                        </h2>
+                        <p class="text-lg font-bold">
+                           Συμπλήρωσε την παρακάτω φόρμα, και εμείς θα κάνουμε
+                           τα υπόλοιπα!
+                        </p>
+                        <h2 class="title font-bold text-2xl md:text-2xl">
+                           ΠΑΡΑΓΓΕΙΛΕ ΤΩΡΑ ΚΑΙ
+                           <span class="text-[#FF0000]">
+                              ΚΕΡΔΙΣΕ 50% ΕΚΠΤΩΣΗ
+                           </span>
+                           <del>79.90€</del> 39.95€
+                        </h2>
+                        <p class="text-lg font-bold">
+                           100% εγγύηση επιστροφής χρημάτων εντός 14 ημερών
+                        </p>
+                     </div>
+
+                     <div class="flex flex-col items-center text-center gap-5">
+                        <!-- ? CARDS -->
+                        <article
+                           class="flex flex-col md:flex-row md:justify-between md:[&>div]:w-[45%] md:[&>div]:h-[620px] lg:[&>div]:h-[550px] items-center gap-5 2xl:[&>div]:w-[350px]"
+                        >
+                           <!-- ? card -->
+                           <div
+                              class="flex flex-col bg-white items-center justify-between border text-center rounded-xl gap-2 min-h-[350px] shadow-xl"
+                           >
+                              <div
+                                 class="flex font-bold text-white justify-center items-center w-full rounded-t-xl h-[10%]"
+                              ></div>
+
+                              <div
+                                 class="flex md:flex-col-reverse items-center h-[45%] p-5"
+                              >
+                                 <div
+                                    class="w-[25%] flex items-center justify-center md:w-full h-full"
+                                 >
+                                    <img
+                                       src="images/s2/1x.png"
+                                       alt=""
+                                       class="md:max-w-[150px]"
+                                    />
+                                 </div>
+                                 <div
+                                    id="2x"
+                                    class="w-[75%] flex items-center justify-center px-12 h-full md:w-full"
+                                 >
+                                    <h3
+                                       class="text-xl font-bold py-14 w-full text-center"
+                                    >
+                                       1x Arctic Cool Ultra
+                                    </h3>
+                                 </div>
+                              </div>
+
+                              <div
+                                 class="flex flex-col w-full justify-center gap-8 items-center h-[20%]"
+                              >
+                                 <div class=" ">
+                                    <p
+                                       class="text-xl text-[#FF0000] flex gap-3 font-bold"
+                                    >
+                                       <del>79.90€</del>
+                                       <span
+                                          class="font-extrabold text-2xl text-black"
+                                          >39.50€</span
+                                       >
+                                    </p>
+
+                                    <p class="text-base font-bold">
+                                       * Μεταφορικά 5.95€
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <a
+                                 href="#send-form"
+                                 class="bg-[#FF8425] cursor-pointer flex font-bold text-white justify-center items-center w-full rounded-b-xl h-[25%]"
+                              >
+                                 ΑΓΟΡΑΣΕ ΕΔΩ!
+                              </a>
+                           </div>
+
+                           <!-- ? card -->
+                           <div
+                              class="flex flex-col bg-white items-center justify-between border text-center rounded-xl gap-2 min-h-[350px] shadow-xl"
+                           >
+                              <div
+                                 class="bg-[#1D6B32] flex font-bold text-white justify-center items-center w-full rounded-t-xl h-[10%]"
+                              >
+                                 ΔΗΜΟΦΙΛΕΣΤΕΡΗ ΠΡΟΣΦΟΡΑ
+                              </div>
+
+                              <div
+                                 class="flex md:flex-col-reverse items-center h-[45%] p-5"
+                              >
+                                 <div
+                                    class="w-[25%] flex items-center justify-center md:w-full h-full"
+                                 >
+                                    <img
+                                       src="images/s2/2x.png"
+                                       alt=""
+                                       class="md:max-w-[150px]"
+                                    />
+                                 </div>
+                                 <div
+                                    id="3x"
+                                    class="w-[75%] flex items-center justify-center px-12 h-full md:w-full"
+                                 >
+                                    <h3
+                                       class="text-xl font-bold w-full text-center"
+                                    >
+                                       2x Arctic Cool Ultra
+                                    </h3>
+                                 </div>
+                              </div>
+
+                              <div
+                                 class="flex flex-col w-full justify-center gap-8 items-center h-[20%]"
+                              >
+                                 <div class="">
+                                    <p
+                                       class="text-xl text-[#FF0000] flex gap-3 font-bold"
+                                    >
+                                       <del>158.00€</del>
+                                       <span
+                                          class="font-extrabold text-2xl text-black"
+                                          >79.00€</span
+                                       >
+                                    </p>
+
+                                    <p class="text-base font-bold">
+                                       * ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <a
+                                 href="#send-form"
+                                 class="bg-[#FF8425] cursor-pointer flex font-bold text-white justify-center items-center w-full rounded-b-xl h-[25%]"
+                              >
+                                 ΑΓΟΡΑΣΕ ΕΔΩ!
+                              </a>
+                           </div>
+
+                           <!-- ? card -->
+                           <div
+                              class="flex flex-col bg-white items-center justify-between border text-center rounded-xl gap-2 min-h-[350px] shadow-xl"
+                           >
+                              <div
+                                 class="flex font-bold text-white justify-center items-center w-full rounded-t-xl h-[10%]"
+                              ></div>
+
+                              <div
+                                 class="flex md:flex-col-reverse items-center h-[45%] p-5"
+                              >
+                                 <div
+                                    class="w-[25%] flex items-center justify-center md:w-full h-full"
+                                 >
+                                    <img
+                                       src="images/s2/3x.png"
+                                       alt=""
+                                       class="md:max-w-[150px]"
+                                    />
+                                 </div>
+                                 <div
+                                    id="2x"
+                                    class="w-[75%] flex items-center justify-center px-12 h-full md:w-full"
+                                 >
+                                    <h3
+                                       class="text-xl font-bold py-14 w-full text-center"
+                                    >
+                                       3x Arctic Cool Ultra
+                                    </h3>
+                                 </div>
+                              </div>
+
+                              <div
+                                 class="flex flex-col w-full justify-center gap-8 items-center h-[20%]"
+                              >
+                                 <div class=" ">
+                                    <p
+                                       class="text-xl text-[#FF0000] flex gap-3 font-bold"
+                                    >
+                                       <del>198€</del>
+                                       <span
+                                          class="font-extrabold text-2xl text-black"
+                                          >99€</span
+                                       >
+                                    </p>
+
+                                    <p class="text-base font-bold">
+                                       * ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ
+                                    </p>
+                                 </div>
+                              </div>
+
+                              <a
+                                 href="#send-form"
+                                 class="bg-[#FF8425] cursor-pointer flex font-bold text-white justify-center items-center w-full rounded-b-xl h-[25%]"
+                              >
+                                 ΑΓΟΡΑΣΕ ΕΔΩ!
+                              </a>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <!-- ? form section -->
+            <article
+               id="cards-section"
+               class="flex justify-center py-10 bg-[#F5F7F8] w-full p-5"
+            >
+               <div
+                  class="flex flex-col md:flex-row items-center gap-10 w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]"
+               >
+                  <div
+                     class="flex w-full flex-col h-full justify-between gap-5 md:w-[50%] items-center"
+                  >
+                     <div class="flex w-full h-[70px] rounded-xl shadow-xl">
+                        <button
+                           class="btn-g w-[40%] text-sm text-white font-bold py-2 px-4 rounded-l-xl"
+                        >
+                           Μόνο 14 κομμάτια διαθέσιμα...
+                        </button>
+                        <div
+                           class="back-g w-[60%] py-2 px-4 rounded-r-xl"
+                        ></div>
+                     </div>
+                     <div
+                        class="flex flex-col items-center w-full border bg-[#dce3ff] rounded-xl"
+                     >
+                        <form
+                           id="send-form"
+                           class="flex flex-col shadow-lg p-5 gap-3 w-full [&>input]:rounded-lg [&>input]:p-2 bg-[#dce3ff]"
+                           action=""
+                        >
+                           <label for="package" class="font-bold text-xl"
+                              >Επιλέξτε πακέτο</label
+                           >
+                           <select
+                              id="package"
+                              class="rounded-lg p-2 font-bold w-full"
+                              name="package"
+                           >
+                              <option value="op-1">1x Artic Cool Ultra</option>
+                              <option value="op-2">2x Artic Cool Ultra</option>
+                              <option value="op-2">3x Artic Cool Ultra</option>
+                           </select>
+
+                           <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              placeholder="Ονοματεπώνυμο"
+                              class="placeholder:font-bold w-full"
+                           />
+
+                           <input
+                              type="text"
+                              id="city"
+                              name="city"
+                              placeholder="Πόλη"
+                              class="placeholder:font-bold w-full"
+                           />
+
+                           <input
+                              type="text"
+                              id="address"
+                              name="address"
+                              placeholder="Διεύθυνση"
+                              class="placeholder:font-bold w-full"
+                           />
+
+                           <input
+                              type="text"
+                              id="zipcode"
+                              name="zipcode"
+                              placeholder="Ταχυδρομικός Κώδικας"
+                              class="placeholder:font-bold w-full"
+                           />
+
+                           <input
+                              type="text"
+                              id="phone"
+                              name="phone"
+                              placeholder="Αριθμός Τηλεφώνου"
+                              class="placeholder:font-bold w-full"
+                           />
+
+                           <input
+                              type="email"
+                              id="email"
+                              name="email"
+                              placeholder="Email (Προαιρετικό)"
+                              class="placeholder:font-bold w-full"
+                           />
+                        </form>
+                     </div>
+                     <button
+                        type="submit"
+                        onclick="sendSubscribeForm('send-form')"
+                        class="font-bold text-base md:text-3xl lg:text-2xl text-white rounded-xl border-b-[5px] p-5 border-b-[#a75900] shadow-xl bg-[#FF8425]"
+                     >
+                        ΠΑΡΑΓΓΕΙΛΕ ΤΩΡΑ ΜΕ ΕΚΠΤΩΣΗ 50%
+                     </button>
+
+                     <div
+                        class="bg-[#FFF4DF] font-bold p-3 flex items-center justify-evenly text-center border-dashed border border-black"
+                     >
+                        <h2>
+                           Πληρώνεις με αντικαταβολή μόνο αφού παραλάβεις το
+                           προϊόν!
+                        </h2>
+                     </div>
+                  </div>
+
+                  <div
+                     class="flex flex-col items-center justify-between md:w-[50%] gap-5"
+                  >
+                     <h2 class="title font-bold text-2xl md:text-[32px]">
+                        Κάνε το Δικό Σου Σήμερα!
+                     </h2>
+                     <p class="font-bold">
+                        Ο ενδεικτικός χρόνος παράδοσης από τη στιγμή που θα
+                        αποσταλεί η παραγγελία σου είναι:
+                     </p>
+                     <p class="font-bold">
+                        – 1-3 ημέρες για την ηπειρωτική Ελλάδα
+                     </p>
+                     <p class="font-bold">– έως και 5 ημέρες για τα νησιά</p>
+                     <div class="">
+                        <img
+                           src="images/s2/Penguin.png"
+                           class="max-w-[250px] md:max-w-[350px] shadow-xl rounded-xl"
+                           alt=""
+                        />
+                     </div>
+                     <div
+                        class="bg-white flex gap-5 rounded-xl shadow-xl flex-col p-4 w-[70%] text-center justify-center items-center"
+                     >
+                        <img
+                           src="images/s2/acslogo.png"
+                           class="w-[50%]"
+                           alt=""
+                        />
+                        <img src="images/s2/yevix.png" class="w-[50%]" alt="" />
+                        <p class="font-bold">
+                           100% Ασφαλής Παράδοση Στο Χώρο Σου
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </section>
+
+         <section id="home-section" class="flex justify-center">
+            <div
+               class="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+            ></div>
+         </section>
+      </main>
+
+           <!-- ? FOOTER section -->
+           <footer id="footer" class="flex justify-center px-4 py-10 bg-[#CCE0EB]">
+            <div
+               class="flex flex-col gap-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+            >
+               <div
+                  class="[&>a]:text-sm [&>a]:font-bold [&>a]:text-black flex flex-wrap gap-2 justify-center"
+               >
+                  <a
+                     onclick="clickModal('privacy-modal')"
+                     class="hover:text-[#2f49a0] cursor-pointer"
+                  >
+                     Πολιτική Απορρήτου</a
+                  >
+                  <a
+                     onclick="clickModal('terms-modal')"
+                     class="hover:text-[#2f49a0] cursor-pointer"
+                  >
+                     Όροι και Προϋποθέσεις</a
+                  >
+   
+                  <a
+                     onclick="clickModal('about-modal')"
+                     class="hover:text-[#2f49a0] cursor-pointer"
+                     >Ποιοι Είμαστε
+                  </a>
+                  <a
+                     onclick="clickModal('contact-modal')"
+                     class="hover:text-[#2f49a0] cursor-pointer"
+                     >Επικοινωνία</a
+                  >
+               </div>
+   
+               <p class="text-sm/[29px] font-bold text-center text-[#777777]">
+                  ΑΥΤΗ ΕΙΝΑΙ ΜΙΑ ΔΙΑΦΗΜΙΣΗ ΚΑΙ ΟΧΙ ENA ΠΡΑΓΜΑΤΙΚΟ ΑΡΘΡΟ, BLOG Ή MIA
+                  ΕΝΗΜΕΡΩΣΗ ΠΡΟΣΤΑΣΙΑΣ TOY ΚΑΤΑΝΑΛΩΤΗ ΠΕΡΙ ΠΡΟΩΘΗΣΗΣ ΑΓΑΘΩΝ: Αυτός
+                  ο ιστότοπος είναι ένας χώρος αγοράς. Ως εκ τούτου, θα πρέπει να
+                  γνωρίζετε ότι ο ιδιοκτήτης έχει χρηματική σύνδεση με το προϊόν
+                  και τις υπηρεσίες που διαφημίζονται στον ιστότοπο. Ο ιδιοκτήτης
+                  λαμβάνει πληρωμή κάθε φορά που αναφέρεται ένας αναγνωρισμένος
+                  υποψήφιος πελάτης, αλλά έως εκεί. Ενημερωθείτε εκτενέστερα στη
+                  σελίδα μας  <span class="text-[#4089C3]">ΠΕΡΙ ΔΙΑΦΗΜΙΣΗΣ</span>.
+                  Δεν είμαστε υπεύθυνοι για τις επιστροφές προϊόντων, την
+                  υποστήριξη που σχετίζεται με το προϊόν και την αποστολή
+                  προϊόντων. Εάν δεν είστε απόλυτα ευχαριστημένοι με τα αγαθά που
+                  λάβατε, επικοινωνήστε απευθείας με τον πάροχο των αγαθών.
+                  Μπορείτε να βρείτε περισσότερες πληροφορίες σχετικά με τους
+                  παρόχους των προϊόντων μέσω της σελίδας Πολιτικής Απορρήτου ή στη
+                  σελίδα Επικοινωνίας μας. Χρησιμοποιώντας τον ιστότοπό μας,
+                  κατανοείτε και συμφωνείτε ότι είστε αποκλειστικά υπεύθυνοι για τη
+                  λήψη των δικών σας αξιολογήσεων, αποφάσεων και εκτιμήσεων σχετικά
+                  με το εάν θα εμπλακείτε σε οποιαδήποτε υπηρεσία που παρέχεται.
+                  Όλες οι δηλώσεις και οι εγγυήσεις σχετικά με τις πληροφορίες που
+                  παρουσιάζονται σε αυτή τη σελίδα αποποιούνται. Οι πληροφορίες,
+                  συμπεριλαμβανομένων των τιμών, που εμφανίζονται σε αυτόν τον
+                  ιστότοπο, υπόκεινται σε αλλαγές ανά πάσα στιγμή. ΠΕΡΙ ΔΙΑΦΗΜΙΣΗΣ:
+                  Αυτός ο ιστότοπος, τα προϊόντα και οι υπηρεσίες που αναφέρονται
+                  σε αυτόν είναι χώροι διαφήμισης. Αυτή η ιστοσελίδα είναι μια
+                  διαφήμιση και όχι μια σελίδα δημοσίευσης ειδήσεων. Τυχόν
+                  φωτογραφίες προσώπων που χρησιμοποιούνται σε αυτόν τον ιστότοπο
+                  είναι μοντέλα. Όλα τα ονόματα προϊόντων, τα λογότυπα και οι
+                  επωνυμίες αποτελούν πνευματική ιδιοκτησία των αντίστοιχων κατόχων
+                  τους. Όλα τα ονόματα εταιρειών, προϊόντων και υπηρεσιών που
+                  χρησιμοποιούνται σε αυτόν τον ιστότοπο προορίζονται μόνο για
+                  σκοπούς αναγνώρισης. Η χρήση αυτών των ονομάτων, λογοτύπων και
+                  εμπορικών σημάτων δεν συνεπάγεται έγκριση. Ο ιδιοκτήτης αυτού του
+                  ιστότοπου και των προϊόντων και υπηρεσιών που αναφέρονται σε
+                  αυτόν παρέχει μόνο μία υπηρεσία που οι καταναλωτές μπορούν να
+                  αποκτήσουν και να συγκρίνουν. Ο ιστότοπός μας μπορεί να περιέχει
+                  υπερσυνδέσμους. Εάν κάνετε κλικ σε αυτόν τον υπερσύνδεσμο, θα
+                  εγκαταλείψετε τον ιστότοπό μας και θα μεταβείτε στην ιστοσελίδα
+                  μιας άλλης εταιρείας. Σε αυτό το σημείο, ο ιστότοπός μας δεν έχει
+                  καμία επιρροή στις υπηρεσίες που προσφέρονται από τον εν λόγω
+                  ιστότοπο ή στις μεθόδους της σελίδας αυτής. Αυτοί οι ιστότοποι
+                  έχουν τη δική τους πολιτική απορρήτου που είναι εντελώς ξεχωριστή
+                  από τη δική μας. Η πολιτική απορρήτου μας αναφέρεται μόνο σε
+                  δεδομένα που υποβάλλονται σε επεξεργασία από αυτόν τον ιστότοπο.
+                  Ως εκ τούτου, αυτός ο ιστότοπος δεν αποδέχεται καμία ευθύνη ή
+                  υποχρέωση για υπηρεσίες ή/και ιστότοπους τρίτων ή τις μεθόδους
+                  και/ή το περιεχόμενό τους.
+               </p>
+            </div>
+         </footer>
+
+      <!-- ! Modals -->
+    
+<!-- ? Terms and Conditions Modal -->
+<section
+id="terms-modal"
+class="bg-[#00000088] font-Montserrat flex items-center justify-center min-h-screen absolute z-50 hidden"
+>
+<div
+   class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
+>
+   <div
+      class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
+   >
+      <div class="relative flex items-end">
+         <img
+            class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
+            onclick="clickModal('terms-modal')"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
+            alt=""
+         />
+         <div class="bg-[#FF8425] w-full">
+            <h2
+               class="text-base text-center p-4 font-bold text-white w-full"
+            >
+               Όροι και Προϋποθέσεις
+            </h2>
+         </div>
+      </div>
+
+      <article
+         class="overflow-y-auto overflow-x-hidden bg-white h-96 p-5 text-xs flex flex-col gap-4"
+      >
+         <h3 class="font-semibold text-lg">Όροι και Προϋποθέσεις</h3>
+         <p class="text-sm">
+            Αυτός ο ιστότοπος είναι ένας χώρος αγορών. Ο ιδιοκτήτης
+            έχει ουσιαστική οικονομική σχέση με τον πάροχο των αγαθών
+            που αναφέρονται στον ιστότοπο, δεδομένου ότι λαμβάνει
+            αποζημίωση για τα κλικ στη διαφήμιση ή για τις πωλήσεις των
+            προϊόντων. Δεν είμαστε υπεύθυνοι για τις επιστροφές
+            προϊόντων, την υποστήριξη που σχετίζεται με το προϊόν και
+            την αποστολή προϊόντων. Εάν δεν είστε απόλυτα
+            ευχαριστημένοι με τα αγαθά που λάβατε, επικοινωνήστε
+            απευθείας με τον πάροχο των αγαθών. Αυτός ο ιστότοπος
+            παρέχει μέσω του καθορισμένου λογισμικού και του ιστότοπού
+            του ορισμένες υπηρεσίες μάρκετινγκ, διαφήμισης, προώθησης
+            και σχετικές υπηρεσίες. Αυτοί οι Όροι Χρήσης διέπουν την
+            πρόσβαση και χρήση του <span class="dyn-domain"></span> από τους
+            χρήστες. Οι χρήστες πρέπει να συμφωνήσουν με αυτούς τους
+            Όρους πριν από τη χρήση του <span class="dyn-name"></span>.com Ο πάροχος
+            του προϊόντος έχει την πλήρη ευθύνη όταν πρόκειται για την
+            παραγγελία σας. Βρείτε τους Όρους και τις Προϋποθέσεις των
+            προϊόντων που αναφέρονται σε αυτόν τον ιστότοπο,
+            επισκεπτόμενοι τον σύνδεσμο του παρόχου που βρίσκεται
+            παρακάτω:
+         </p>
+         <h3 class="font-semibold text-lg">
+            Σχετικά με τον ιστότοπό μας
+         </h3>
+         <p class="text-sm">
+            Αυτή είναι μια διαφήμιση και όχι ένα πραγματικό άρθρο
+            ειδήσεων, ιστολόγιο ή ενημέρωση για την προστασία των
+            καταναλωτών.
+            <br /><br />
+            Το <span class="dyn-name"></span>.com λειτουργεί από επαγγελματίες και
+            σκοπός του είναι να δίνει τη δυνατότητα στους χρήστες να
+            ζητούν προσφορές ή πληροφορίες για το προϊόν ή την υπηρεσία
+            που εμφανίζεται ή επιλέγεται σε αυτόν τον ιστότοπο.
+            <br /><br />
+            Η υπηρεσία που παρέχει ο ιστότοπός μας είναι να συνδέει
+            άτομα που θέλουν να μάθουν περισσότερα για την υπηρεσία με
+            τρίτους παρόχους. Χρησιμοποιώντας τον ιστότοπό μας,
+            κατανοείτε και συμφωνείτε ότι είστε αποκλειστικά υπεύθυνοι
+            για τη λήψη των δικών σας αξιολογήσεων, αποφάσεων και
+            εκτιμήσεων σχετικά με το εάν θα συνεργαστείτε με
+            οποιονδήποτε Πάροχο Υπηρεσιών ή θα αλληλεπιδράσετε με
+            οποιονδήποτε άλλον τρόπο με οποιονδήποτε Πάροχο Υπηρεσιών.
+         </p>
+
+         <h3 class="font-semibold text-lg">
+            Κατανοείτε και συμφωνείτε ότι η Εταιρεία:
+         </h3>
+         <p class="text-sm">
+            (α) δεν χρησιμοποιεί, δεν προτείνει ή εγκρίνει τρίτα μέρη ή
+            προϊόντα, ανάλογα με την περίπτωση, ή οποιοδήποτε
+            συνδεδεμένο μέρος με αυτά, και δεν έχει κανέναν έλεγχο στις
+            πράξεις ή παραλείψεις οποιουδήποτε Τρίτου, την επιχείρησή
+            του, τα προϊόντα ή τις υπηρεσίες του. (β) δεν παρέχει καμία
+            δήλωση ή εγγύηση σχετικά με τα τρίτα μέρη και τα προϊόντα,
+            συμπεριλαμβανομένης της ποιότητας, της τιμής, της
+            συμβατότητας, της διαθεσιμότητας ή οποιωνδήποτε άλλων
+            χαρακτηριστικών, ή σχετικά με τις αλληλεπιδράσεις ή τις
+            συναλλαγές σας με τρίτα μέρη. (γ) δεν προβαίνει σε δηλώσεις
+            ή εγγυήσεις σχετικά με τα ιδιοκτησιακά δικαιώματα ή άλλα
+            δικαιώματα ή χαρακτηριστικά ή ρυθμιστικές πτυχές που
+            σχετίζονται με τα προϊόντα, συμπεριλαμβανομένης τυχόν
+            απαιτούμενης εξουσιοδότησης, αδειών ή αδειών για τη
+            μεταφόρτωση, κοινή χρήση ή με άλλο τρόπο διάθεση και για
+            χρήση, πώληση και αγορά τέτοιων προϊόντων. (δ) δεν
+            ευθύνεται για την απόδοση ή τη συμπεριφορά οποιουδήποτε
+            χρήστη ή άλλων τρίτων με οποιονδήποτε τρόπο που
+            χρησιμοποιεί ή έχει χρησιμοποιήσει τις Υπηρεσίες και/ή
+            εντός ή εκτός <span class="dyn-name"></span>.com
+            <br /><br />
+            Η Εταιρεία δεν υποχρεούται να ελέγξει ή με άλλο τρόπο να
+            επαληθεύσει οποιαδήποτε πληροφορία σχετικά με τρίτα μέρη
+            ή/και χρήστες, τα προϊόντα ή οποιοδήποτε άλλο
+            χαρακτηριστικό που σχετίζεται με το <span class="dyn-name"></span>.com,
+            και ως εκ τούτου, θα πρέπει να είστε προσεκτικοί και να
+            κάνετε τις δικές σας εξετάσεις και ελέγχους πριν εμπλακείτε
+            με οποιονδήποτε μέσω των Υπηρεσιών ή του
+            <span class="dyn-name"></span>.com ή άλλως αλληλεπιδρώντας με
+            οποιονδήποτε.
+            <br /><br />
+            Η Εταιρεία αποποιείται ρητά και απαλλάσσετε ρητά την
+            Εταιρεία από οποιαδήποτε ευθύνη για τυχόν διαμάχες,
+            αξιώσεις, μηνύσεις, τραυματισμούς, απώλεια, ζημιά και/ή
+            ζημιές που προκύπτουν από και/ή με οποιονδήποτε τρόπο που
+            σχετίζονται με τα Τρίτα Μέρη, προϊόντα, υπηρεσίες και
+            <span class="dyn-name"></span>.com ή τις αλληλεπιδράσεις ή τις
+            συναλλαγές σας με τρίτα μέρη, συμπεριλαμβανομένων χωρίς
+            περιορισμό πράξεων ή/και παραλείψεων τρίτων με οποιονδήποτε
+            τρόπο που χρησιμοποιούν ή συνδέονται με τις υπηρεσίες ή την
+            εταιρεία με οποιοδήποτε μέσο. com, αναγνωρίζετε ότι είστε
+            αποκλειστικά υπεύθυνοι για αυτή τη χρήση και τις συνδέσεις,
+            τις αλληλεπιδράσεις, τις αγορές ή οποιαδήποτε άλλη ενέργεια
+            κάνετε και ότι όλη η χρήση των υπηρεσιών ή του
+            <span class="dyn-name"></span>.com γίνεται με αποκλειστική ευθύνη σας.
+            <br /><br />
+
+            Για την αποφυγή οποιασδήποτε αμφιβολίας, η Εταιρεία δεν
+            πουλά, αδειοδοτεί ή καθιστά με άλλον τρόπο στη διάθεσή σας
+            προϊόντα ή υπηρεσίες και δεν φέρει καμία ευθύνη για
+            οποιαδήποτε προϊόντα ή υπηρεσίες που αγοράσατε από
+            οποιοδήποτε τρίτο μέρος, συμπεριλαμβανομένων χωρίς
+            περιορισμούς, με σεβασμό σε οποιαδήποτε υποστήριξη και
+            συντήρηση, προεπιλογές, σφάλματα, αποτυχίες, ζημιές ή
+            κόστος οποιουδήποτε είδους. Οι πληροφορίες που βρίσκετε σε
+            αυτόν τον ιστότοπο είναι μόνο για ενημερωτικούς σκοπούς και
+            δεν αντικαθιστούν τις συμβουλές ενός ειδικού. Αναφερόμαστε
+            σε προϊόντα και υπηρεσίες για τα οποία Δεν είμαστε ούτε
+            παραγωγοί ούτε άμεσοι προμηθευτές. Όλα τα εμπορικά σήματα,
+            οι εικόνες και τα πνευματικά δικαιώματα τρίτων σε αυτήν τη
+            σελίδα χρησιμοποιούνται για σκοπούς συγκριτικής διαφήμισης,
+            κριτικής ή κριτικής.
+         </p>
+
+         <h3 class="font-semibold text-lg">
+            Υπερσύνδεσμοι από τρίτα μέρη
+         </h3>
+         <p class="text-sm">
+            Ο ιστότοπός μας μπορεί να περιέχει υπερσυνδέσμους. Εάν
+            κάνετε κλικ σε αυτόν τον υπερσύνδεσμο, θα εγκαταλείψετε τον
+            ιστότοπό μας και θα μεταβείτε στον ιστότοπο μιας άλλης
+            εταιρείας. Σε αυτό το σημείο, το <span class="dyn-name"></span>.com δεν
+            έχει καμία επιρροή στις υπηρεσίες που προσφέρονται από τον
+            εν λόγω ιστότοπο ή στις μεθόδους του ιστότοπου. Αυτοί οι
+            ιστότοποι έχουν τη δική τους πολιτική απορρήτου που είναι
+            εντελώς ξεχωριστή από την πολιτική απορρήτου μας. Η
+            πολιτική απορρήτου μας αναφέρεται μόνο σε δεδομένα που
+            υποβάλλονται σε επεξεργασία από το <span class="dyn-name"></span>.com.
+            Ως εκ τούτου, το <span class="dyn-name"></span>.com δεν αποδέχεται καμία
+            ευθύνη ή υποχρέωση για υπηρεσίες ή/και ιστότοπους τρίτων ή
+            τις μεθόδους και/ή το περιεχόμενό τους.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Αποποίηση ευθύνης κερδών
+         </h3>
+         <p class="text-sm">
+            Ο κάτοχος αυτού του ιστότοπου έχει ουσιαστική οικονομική
+            σύνδεση με τους Παρόχους Υπηρεσιών που αναφέρονται στον
+            ιστότοπο, καθώς λαμβάνει αποζημίωση για κλικ στις
+            διαφημίσεις ή για πωλήσεις των προϊόντων ή των υπηρεσιών.
+         </p>
+         <h3 class="font-semibold text-lg">Επικοινωνήστε μαζί μας</h3>
+         <p class="text-sm">
+            Συμπερασματικά, παρόλο που είναι δουλειά μας να δοκιμάσουμε
+            επιλεγμένα προϊόντα και να παρέχουμε τη γνώμη μας για αυτά,
+            είμαστε ακριβώς όπως εσείς. Μας αρέσει να ακολουθούμε τις
+            τάσεις της τεχνολογίας, είμαστε γονείς, αγαπάμε τα gadgets,
+            είμαστε ιδιοκτήτες κατοικίδιων ζώων, και έχουμε πάθος να
+            κάνουμε τη ζωή μας πιο εύκολη μέσω μιας έξυπνης αγοράς.
+         </p>
+         <h3 class="font-semibold text-lg">Αλλαγές στους Όρους μας</h3>
+         <p class="text-sm">
+            Διατηρούμε το δικαίωμα να κάνουμε αλλαγές στους όρους και
+            τις προϋποθέσεις μας ανά πάσα στιγμή χωρίς να σας
+            ειδοποιήσουμε. Συνιστάται να επισκεφτείτε ξανά αυτήν τη
+            σελίδα στο μέλλον για να ελέγξετε για τυχόν αλλαγές στους
+            όρους μας.
+         </p>
+      </article>
+   </div>
+</div>
+</section>
+
+<!-- ? Privacy Policy Modal -->
+<section
+id="privacy-modal"
+class="bg-[#00000088] font-Montserrat flex items-center justify-center min-h-screen absolute z-50 hidden"
+>
+<div
+   class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
+>
+   <div
+      class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
+   >
+      <div class="relative flex items-end">
+         <img
+            class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
+            onclick="clickModal('privacy-modal')"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
+            alt=""
+         />
+         <div class="bg-[#FF8425] w-full">
+            <h2
+               class="text-base text-center p-4 font-bold text-white w-full"
+            >
+               Πολιτική Απορρήτου
+            </h2>
+         </div>
+      </div>
+
+      <article
+         class="overflow-y-auto overflow-x-hidden bg-white h-96 p-5 text-xs flex flex-col gap-4"
+      >
+         <h3 class="font-semibold text-lg">Πολιτική Απορρήτου</h3>
+         <p class="text-sm">
+            Αυτός ο ιστότοπος είναι ένας χώρος αγορών. Ο ιδιοκτήτης
+            έχει ουσιαστική οικονομική σχέση με τον πάροχο των αγαθών
+            που αναφέρονται στον ιστότοπο, καθώς λαμβάνει αποζημίωση
+            για τα κλικ στη διαφήμιση ή για πωλήσεις του κάθε
+            προϊόντος. Δεν είμαστε υπεύθυνοι για τις επιστροφές
+            προϊόντων, την υποστήριξη που σχετίζεται με το προϊόν και
+            την αποστολή προϊόντων. Εάν δεν είστε απόλυτα
+            ευχαριστημένοι με τα αγαθά που λάβατε, επικοινωνήστε
+            απευθείας με τον πάροχο των αγαθών. <br />
+            <br />
+            Ο πάροχος του προϊόντος έχει την πλήρη ευθύνη όταν
+            πρόκειται για την παραγγελία σας. Βρείτε τη Δήλωση
+            Πολιτικής Απορρήτου των προϊόντων που αναφέρονται σε αυτόν
+            τον ιστότοπο, επισκεπτόμενοι τον σύνδεσμο του παρόχου που
+            βρίσκεται παρακάτω:
+         </p>
+         <h3 class="font-semibold text-lg">Πολιτική Απορρήτου</h3>
+         <p class="text-sm">
+            Έχετε ορισμένα δικαιώματα σε σχέση με τα δεδομένα σας,
+            συμπεριλαμβανομένου του δικαιώματος αντίρρησης στην
+            επεξεργασία με βάση τα νόμιμα συμφέροντα, τη δημιουργία
+            προφίλ (συμπεριλαμβανομένης της χρήσης προσαρμοσμένου και
+            παρόμοιου κοινού) και του άμεσου μάρκετινγκ. Ανά πάσα
+            στιγμή, μπορείτε να ασκήσετε τα δικαιώματά σας στέλνοντάς
+            μας email.
+
+            <br />
+            <br />
+            Για περισσότερες λεπτομέρειες σχετικά με την επεξεργασία
+            μας και τα δικαιώματά σας, ανατρέξτε παρακάτω: <br /><br />
+            Κατανοούμε ότι το απόρρητο είναι πολύ σημαντικό για κάθε
+            χρήστη του Διαδικτύου αυτές τις μέρες. Γι' αυτό θα θέλαμε
+            να σας ενημερώσουμε για αυτό το θέμα. Ποια δεδομένα
+            συλλέγουμε, πώς τα συλλέγουμε, τι κάνουμε με αυτές τις
+            πληροφορίες και πώς τα χειριζόμαστε: θα διαβάσετε τα πάντα
+            σε αυτήν τη σελίδα. <br />
+            <br />
+
+            Το ' . <span class="dyn-name"></span>.com . ' δίνει μεγάλη αξία στο
+            απόρρητο κάθε επισκέπτη στον ιστότοπό μας. Γι' αυτό
+            φροντίζουμε τα δεδομένα που μας αφήνετε να διατηρούνται
+            απολύτως εμπιστευτικά. Το ' . <span class="dyn-name"></span>.com . '
+            ενεργεί σύμφωνα με τον Νόμο για την Προστασία Δεδομένων
+            Προσωπικού Χαρακτήρα και, από τις 25 Μαΐου 2018, τον Γενικό
+            Κανονισμό Προστασίας Δεδομένων, στο μέτρο που αυτό ισχύει
+            για εμάς, και τον Νόμο του 2018 για την Προστασία των
+            Καταναλωτών της Καλιφόρνια (CCPA). <br /><br />
+            Προς το παρόν, ο ιστότοπός μας δεν προσφέρει τη δυνατότητα
+            δημιουργίας προφίλ χρηστών, λογαριασμών, σχολίων ή αγοράς
+            προϊόντων απευθείας από τον ιστότοπό μας. Επίσης, δεν
+            παρέχουμε την επιλογή εγγραφής σε ενημερωτικό δελτίο με τα
+            προσωπικά σας στοιχεία, ούτε σας στέλνουμε τυχόν
+            ενημερωτικά δελτία ή email. Μόνο συμπληρώνοντας τη φόρμα
+            επικοινωνίας θα λάβουμε τα προσωπικά σας δεδομένα, αλλά
+            αυτά περιορίζονται στις πληροφορίες που συμπληρώνετε εσείς.
+            Χρησιμοποιούμε (αποπροσωποποιημένα) δεδομένα για να
+            διασφαλίσουμε ότι ο ιστότοπός μας λειτουργεί σωστά/
+            Συλλέγουμε αυτές τις πληροφορίες μέσω λειτουργικών και
+            αναλυτικών cookies. Τοποθετούμε επίσης cookies μάρκετινγκ.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Τι είδους προσωπικά δεδομένα συλλέγουμε και
+            επεξεργαζόμαστε;
+         </h3>
+         <p class="text-sm">
+            Όπως αναφέρθηκε προηγουμένως, το <span class="dyn-name"></span>.com δεν
+            παρέχει τη δυνατότητα δημιουργίας προφίλ χρήστη ή
+            οποιουδήποτε τύπου λογαριασμού σε αυτόν τον ιστότοπο. Είναι
+            επίσης αδύνατο να σχολιάσετε, να δημιουργήσετε λογαριασμό,
+            να αγοράσετε προϊόντα μέσω του ιστότοπού μας ή να
+            εγγραφείτε σε ενημερωτικό δελτίο, ούτε να σας στείλουμε
+            ενημερωτικά δελτία ή μηνύματα ηλεκτρονικού ταχυδρομείου.
+            Αυτό ήδη αποκλείει έναν πολύ συνηθισμένο λόγο για τη
+            συλλογή των προσωπικών σας δεδομένων από την υποβολή
+            αίτησης σε εμάς.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Συλλογή και επεξεργασία στατιστικών δεδομένων που
+            δημιουργούνται αυτόματα.
+         </h3>
+         <p class="text-sm">
+            Για να βεβαιωθείτε ότι ο ιστότοπος λειτουργεί βέλτιστα και
+            για να συνεχίσει να βελτιώνεται, οι πληροφορίες σχετικά με
+            τη χρήση του ιστότοπού μας υποβάλλονται σε αυτόματη
+            επεξεργασία. Η βελτιστοποίηση του ιστότοπού μας έχει να
+            κάνει κυρίως με τεχνικές προσαρμογές που, για παράδειγμα,
+            διασφαλίζουν ότι οι σελίδες μας εμφανίζονται σωστά και ότι
+            είναι ασφαλείς και προστατευμένες. Οι πληροφορίες που
+            υποβάλλονται σε επεξεργασία αποτελούνται, για παράδειγμα,
+            από τον τύπο της συσκευής που χρησιμοποιείτε (υπολογιστής,
+            κινητό, tablet), τη διεύθυνση IP σας (τη διεύθυνση
+            Διαδικτύου της συσκευής σας που συνδέεται συχνά με τη
+            γενική τοποθεσία σας), το πρόγραμμα περιήγησης που
+            χρησιμοποιείτε, τη λειτουργία σύστημα που χρησιμοποιείτε,
+            τις σελίδες που επισκέπτεστε στον ιστότοπό μας και από πού
+            ήρθατε πριν προσγειωθείτε στον ιστότοπό μας. Αυτά είναι
+            αποπροσωποποιημένα δεδομένα και είναι αδύνατο να τα
+            εντοπίσουμε σε εσάς. Αυτές οι πληροφορίες συλλέγονται με
+            την τοποθέτηση αναλυτικών cookies. Μπορείτε να διαβάσετε
+            περισσότερα για αυτό στη Δήλωση Cookie παρακάτω.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Πηγές Προσωπικών Πληροφοριών
+         </h3>
+         <p class="text-sm">
+            Λαμβάνουμε τις κατηγορίες προσωπικών πληροφοριών που
+            αναφέρονται παραπάνω από τις ακόλουθες κατηγορίες πηγών:
+            <br />
+            <br />
+            Απευθείας από εσάς. Για παράδειγμα, από φόρμες που
+            συμπληρώνετε ή προϊόντα και υπηρεσίες, αγοράζετε. <br />
+            Έμμεσα από εσάς. Για παράδειγμα, από την παρατήρηση των
+            ενεργειών σας στους ιστότοπούς μας. <br />
+            Από τρίτους επιχειρηματικούς συνεργάτες, όπως παρόχους
+            αναλυτικών στοιχείων. <br />
+            Η συλλογή και η επεξεργασία στοιχείων επικοινωνίας και η
+            επεξεργασία στατιστικών δεδομένων είναι <br />
+            απαραίτητη για τη διασφάλιση των έννομων συμφερόντων του
+            <span class="dyn-name"></span>.com και, ως εκ τούτου, δεν μπορεί να
+            απορριφθεί.
+         </p>
+
+         <h3 class="font-semibold text-lg">
+            Χρήση των δεδομένων σας από τρίτους
+         </h3>
+         <p class="text-sm">
+            Τα δεδομένα που συλλέγουμε και επεξεργαζόμαστε δεν
+            κοινοποιούνται σε τρίτα μέρη, εκτός εάν μας έχετε δώσει
+            ρητά την άδεια να το πράξουμε. Τα προσωπικά στοιχεία που
+            συμπληρώσατε στη φόρμα επικοινωνίας δεν θα σταλούν ποτέ σε
+            τρίτους εκτός εάν έχετε δώσει τη ρητή άδειά σας για
+            Μπορείτε να ανακαλέσετε την άδειά σας ανά πάσα στιγμή.
+            Μπορείτε να το κάνετε αυτό επικοινωνώντας μαζί μας. Στη
+            Δήλωση Cookie, θα βρείτε μια λίστα με τους συνεργάτες με
+            τους οποίους μοιραζόμαστε τα αποπροσωποποιημένα αναλυτικά
+            και λειτουργικά cookies και, μόνο με την άδειά σας, τα
+            δεδομένα που χρησιμοποιούνται για σκοπούς μάρκετινγκ και
+            κοινωνικών μέσων. Τέλος, το <span class="dyn-name"></span>.com μπορεί να
+            παρέχει τις προσωπικές σας πληροφορίες σε τρίτους όταν
+            είμαστε υποχρεωμένοι να το πράξουμε βάσει νόμων και
+            κανονισμών ή εάν αναγκαστούμε να το πράξουμε λόγω αγωγής
+            ή/και σε περίπτωση που το κρίνουμε απαραίτητο για την
+            προστασία του τα δικά μας δικαιώματα
+         </p>
+         <h3 class="font-semibold text-lg"></h3>
+         <p class="text-sm">
+            Ο ιστότοπός μας μπορεί να περιέχει υπερσυνδέσμους. Εάν
+            κάνετε κλικ σε αυτόν τον υπερσύνδεσμο, θα εγκαταλείψετε τον
+            ιστότοπό μας και θα μεταβείτε στον ιστότοπο μιας άλλης
+            εταιρείας. Σε αυτό το σημείο, το <span class="dyn-name"></span>.com δεν
+            έχει καμία επιρροή στις υπηρεσίες που προσφέρονται από τον
+            εν λόγω ιστότοπο ή στις μεθόδους του ιστότοπου. Αυτοί οι
+            ιστότοποι έχουν τη δική τους πολιτική απορρήτου που είναι
+            εντελώς ξεχωριστή από την πολιτική απορρήτου μας. Η
+            πολιτική απορρήτου μας αναφέρεται μόνο σε δεδομένα που
+            υποβάλλονται σε επεξεργασία από το <span class="dyn-name"></span>.com.
+            Ως εκ τούτου, το <span class="dyn-name"></span>.com δεν αποδέχεται καμία
+            ευθύνη ή υποχρέωση για υπηρεσίες ή/και ιστότοπους τρίτων ή
+            τις μεθόδους και/ή το περιεχόμενό τους.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Προσωπικές Πληροφορίες που Δεν Συλλέγουμε
+         </h3>
+         <p class="text-sm">
+            Ειδικές κατηγορίες. Δεν συλλέγουμε ευαίσθητες προσωπικές
+            πληροφορίες για εσάς, οι οποίες περιλαμβάνουν λεπτομέρειες
+            σχετικά με τη φυλή ή την εθνικότητα σας, τις θρησκευτικές ή
+            φιλοσοφικές πεποιθήσεις, τη σεξουαλική ζωή, τον σεξουαλικό
+            προσανατολισμό, τις πολιτικές απόψεις, τη συμμετοχή σε
+            συνδικάτα, πληροφορίες για την υγεία σας και γενετικές και
+            βιομετρικές πληροφορίες.
+         </p>
+      </article>
+   </div>
+</div>
+</section>
+
+<!-- ? About Modal -->
+<section
+id="about-modal"
+class="bg-[#00000088] font-Montserrat flex items-center justify-center min-h-screen absolute z-50 hidden"
+>
+<div
+   class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
+>
+   <div
+      class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
+   >
+      <div class="relative flex items-end">
+         <img
+            class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
+            onclick="clickModal('about-modal')"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
+            alt=""
+         />
+         <div class="bg-[#FF8425] w-full">
+            <h2
+               class="text-base text-center p-4 font-bold text-white w-full"
+            >
+               Ποιοι Είμαστε
+            </h2>
+         </div>
+      </div>
+
+      <article
+         class="overflow-y-auto overflow-x-hidden bg-white h-96 p-5 text-xs flex flex-col gap-4"
+      >
+         <h3 class="font-semibold text-lg">ΠΕΡΙ ΠΡΟΩΘΗΣΗΣ ΑΓΑΘΩΝ</h3>
+         <p class="text-sm">
+            Αυτός ο ιστότοπος είναι ένας χώρος αγορών. Ο ιδιοκτήτης
+            έχει ουσιαστική οικονομική σχέση με τον πάροχο των αγαθών
+            που αναφέρονται στον ιστότοπο, δεδομένου ότι λαμβάνει
+            αποζημίωση για τα κλικ στη διαφήμιση ή για τις πωλήσεις των
+            προϊόντων. Δεν είμαστε υπεύθυνοι για τις επιστροφές
+            προϊόντων, την υποστήριξη που σχετίζεται με το προϊόν και
+            την αποστολή προϊόντων. Εάν δεν είστε απόλυτα
+            ευχαριστημένοι με τα αγαθά που λάβατε, επικοινωνήστε
+            απευθείας με τον πάροχο. Μπορείτε να βρείτε περισσότερες
+            πληροφορίες σχετικά με τους παρόχους των προϊόντων μέσω της
+            Πολιτικής Απορρήτου ή της Σελίδας Επικοινωνίας μας. .
+         </p>
+         <h3 class="font-semibold text-lg">Ποιοι Είμαστε;</h3>
+         <p class="text-sm">
+            Αυτός ο ιστότοπος ανήκει και λειτουργεί από μια ομάδα
+            επαγγελματιών με αποστολή να βοηθήσει τους αναγνώστες να
+            λαμβάνουν τεκμηριωμένες αποφάσεις αγοράς παρουσιάζοντας τις
+            απόψεις μας για επιλεγμένα προϊόντα και επιχειρήσεις.
+            <br /><br />
+            Έχοντας αρκετά χρόνια εμπειρίας στον κλάδο της τεχνολογίας,
+            είμαστε περήφανοι που φτάσαμε σε ένα σημείο να
+            αποτελούμαστε από μια ομάδα ειδικών, οι οποίοι είναι
+            γνώστες των αντίστοιχων πεδίων τους και με μεγάλη εξουσία
+            στις συστάσεις τους.
+         </p>
+
+         <h3 class="font-semibold text-lg">Οι Βασικές Αξίες μας</h3>
+         <p class="text-sm">
+            Όντας στον κλάδο του ηλεκτρονικού εμπορίου, η εις βάθος
+            έρευνα προϊόντων και οι έξυπνες διαδικτυακές επιλογές είναι
+            ενσωματωμένες στη φύση μας. Γνωρίζουμε ότι η επιλογή του
+            κατάλληλου προϊόντος για τις ανάγκες σας μπορεί να είναι
+            πραγματικά δύσκολη υπόθεση. Και είμαστε σίγουροι ότι
+            μοιράζεστε αυτό το πάθος να κάνετε τη σωστή επιλογή μαζί
+            μας. Χιλιάδες αναγνώστες μας επισκέπτονται καθημερινά για
+            να ανακαλύψουν το καλύτερο προϊόν για τις ανάγκες τους και
+            παίρνουμε πολύ σοβαρά τη δουλειά μας για να τους
+            προσφέρουμε αυτό που χρειάζονται. <br /><br />
+
+            Συμπερασματικά, παρόλο που είναι δουλειά μας να δοκιμάσουμε
+            επιλεγμένα προϊόντα και να παρέχουμε τη γνώμη μας για αυτά,
+            είμαστε ακριβώς όπως εσείς. Μας αρέσει να ακολουθούμε τις
+            τάσεις της τεχνολογίας, είμαστε γονείς, αγαπάμε τα gadgets,
+            είμαστε ιδιοκτήτες κατοικίδιων ζώων και έχουμε πάθος να
+            κάνουμε τη ζωή μας πιο εύκολη μέσω μιας έξυπνης αγοράς.
+            <br /><br />
+            Αυτό σημαίνει ότι παρά τη νομισματική σχέση μεταξύ του
+            <span class="dyn-name"></span>.com και του παρόχου(ων) των προϊόντων που
+            αναφέρονται σε αυτόν τον ιστότοπο, καταβάλλουμε κάθε δυνατή
+            προσπάθεια για να παρέχουμε αμερόληπτες και ειλικρινείς
+            απόψεις στους αναγνώστες μας. Εξάλλου, δεν θα διαφημίζαμε
+            ένα προϊόν που δεν θα αγοράζαμε ποτέ μόνοι μας.
+         </p>
+
+         <h3 class="font-semibold text-lg">
+            Έχετε κάποια ερώτηση σχετικά με τον ιστότοπό μας;
+         </h3>
+         <p class="text-sm">
+            Εάν έχετε κάποια ερώτηση σχετικά με τη λειτουργία του
+            <span class="dyn-name"></span>.com, γράψτε μας στο
+            contact@<span class="dyn-name"></span>.com. <br /><br />
+            Εργαζόμαστε σκληρά για να καλύψουμε όλα τα μηνύματα των
+            επισκεπτών μας και θα επικοινωνήσουμε μαζί σας το
+            συντομότερο δυνατό.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Έχετε κάποια ερώτηση σχετικά με τα προϊόντα που αναφέρονται
+            στον ιστότοπό μας;
+         </h3>
+         <p class="text-sm">
+            Εάν έχετε απορίες σχετικά με τα προϊόντα που αναφέρονται σε
+            αυτόν τον ιστότοπο, επικοινωνήστε απευθείας με τον
+            προμηθευτή του προϊόντος. Μπορείτε να βρείτε περισσότερες
+            πληροφορίες στη σελίδα επικοινωνίας μας.
+         </p>
+      </article>
+   </div>
+</div>
+</section>
+
+<!-- ? Contact Modal -->
+<section
+id="contact-modal"
+class="bg-[#00000088] font-Montserrat flex items-center justify-center min-h-screen absolute z-50 hidden"
+>
+<div
+   class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
+>
+   <div
+      class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
+   >
+      <div class="relative flex items-end">
+         <img
+            class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
+            onclick="clickModal('contact-modal')"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
+            alt=""
+         />
+         <div class="bg-[#FF8425] w-full">
+            <h2
+               class="text-base text-center p-4 font-bold text-white w-full"
+            >
+               Επικοινωνία
+            </h2>
+         </div>
+      </div>
+
+      <article
+         class="overflow-y-auto overflow-x-hidden bg-white h-96 p-5 text-xs flex flex-col gap-4"
+      >
+         <h3 class="font-semibold text-lg">
+            Χρειάζεστε βοήθεια σχετικά με το <span class="dyn-name"></span>.com?
+         </h3>
+         <p class="text-sm">
+            Σε περίπτωση που θέλετε να λάβετε περισσότερες πληροφορίες
+            σχετικά με τις κριτικές προϊόντων μας και τη λειτουργία
+            αυτής της ιστοσελίδας, οι ειδικοί μας στην εξυπηρέτηση
+            πελατών είναι εδώ για να σας βοηθήσουν! Απλώς στείλτε μας
+            ένα μήνυμα στο contact@<span class="dyn-name"></span>.com και η ομάδα
+            μας θα επικοινωνήσει μαζί σας το συντομότερο δυνατό.
+         </p>
+         <h3 class="font-semibold text-lg">
+            Χρειάζεστε βοήθεια σχετικά με ένα προϊόν που αναφέρεται στο
+            <span class="dyn-name"></span>.com?
+         </h3>
+         <p class="text-sm">
+            Όπως αναφέρθηκε, αυτός ο ιστότοπος είναι ένας χώρος αγορών.
+            Ο ιδιοκτήτης έχει ουσιαστική οικονομική σχέση με τον πάροχο
+            των αγαθών που αναφέρονται στον ιστότοπο, καθώς λαμβάνει
+            αποζημίωση για κλικ στη διαφήμιση ή για πωλήσεις του
+            προϊόντος. Δεν είμαστε υπεύθυνοι για τις επιστροφές
+            προϊόντων, την υποστήριξη που σχετίζεται με το προϊόν ή την
+            αποστολή. Εάν δεν είστε απόλυτα ευχαριστημένοι με τα αγαθά
+            που λάβατε, επικοινωνήστε απευθείας με τον πάροχο των
+            αγαθών. <br />
+            <br />
+            Είτε έχετε κάποια ερώτηση σχετικά με το προϊόν(τα), τους
+            κατασκευαστές, την τιμολόγηση ή οτιδήποτε άλλο,
+            επικοινωνήστε με τη σελίδα του παρόχου για να λάβετε
+            περισσότερες πληροφορίες.
+         </p>
+      </article>
+   </div>
+</div>
+</section>
+   </body>
+</html>
